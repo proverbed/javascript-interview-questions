@@ -1,53 +1,18 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). Check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions and [ECMAScript](https://github.com/sudheerj/ECMAScript-features) for all ES features.).
-
----
-
-<div>
-<p align="center">
-  <a href="https://www.greatfrontend.com/questions/js?utm_source=github&utm_medium=referral&utm_campaign=sudheerj-react&gnrs=sudheerj">
-    <img src="./images/collab/greatfrontend-js-banner4x.png" alt="GreatFrontEnd JavaScript Interview Questions" width="100%">
-  </a>
-</p>
-</div>
-
-> 💡 Nail JavaScript interviews with questions and solutions from ex-interviewers! [Try GreatFrontEnd →](https://www.greatfrontend.com/questions/js?utm_source=github&utm_medium=referral&utm_campaign=sudheerj-js&gnrs=sudheerj) 💡
-
----
-
-<div>
-<p align="center">
-  <a href="https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js" rel="dofollow">
-    <img src="./images/collab/frontendlead-banner.png" alt="FrontEndLead JavaScript Interview Questions" width="100%">
-  </a>
-</p>
-</div>
-
-> 🚀 Ace Javascript interview questions with solutions from FAANG+ companies! [Try FrontendLead →](https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js) 🚀
-
----
-
-<p align="center">
-  <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
-    <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
-  </a>
-  <p align="center">
-    <ol>
-    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JS beginner to confidently building your own projects</li>
-    <li>Take this <a href=https://links.zerotomastery.io/mci_sudheer2>coding interview bootcamp</a> if you’re serious about getting hired and don’t have a CS degree</li>
-    <li>Take this <a href=https://links.zerotomastery.io/ajs_sudheer>Advanced JavaScript Course</a> to learn advanced JS concepts and become a top JS developer</li>
-    </ol>
-  </p>
-</p>
-
----
 
 ### Table of Contents
 
 <!-- TOC_START -->
 | No. | Questions |
 | --- | --------- |
+| 309 | [What are template literals](#what-are-template-literals) |
+| 223 | [What are primitive data types](#what-are-primitive-data-types) |
+| 224 | [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties) |
+| 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6) |
+| 305 | [What is ES6](#what-is-es6) |
+| 25 | [What is Hoisting](#what-is-hoisting) |
+| 27 | [What are closures](#what-are-closures) |
 | 1 | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript) |
 | 2 | [What is a prototype chain](#what-is-a-prototype-chain) |
 | 3 | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind) |
@@ -72,9 +37,7 @@
 | 22 | [What is an IIFE (Immediately Invoked Function Expression)](#what-is-an-iife-immediately-invoked-function-expression) |
 | 23 | [How do you decode or encode a URL in JavaScript?](#how-do-you-decode-or-encode-a-url-in-javascript) |
 | 24 | [What is memoization](#what-is-memoization) |
-| 25 | [What is Hoisting](#what-is-hoisting) |
 | 26 | [What are classes in ES6](#what-are-classes-in-es6) |
-| 27 | [What are closures](#what-are-closures) |
 | 28 | [What are modules](#what-are-modules) |
 | 29 | [Why do you need modules](#why-do-you-need-modules) |
 | 30 | [What is scope in javascript](#what-is-scope-in-javascript) |
@@ -270,8 +233,6 @@
 | 220 | [Can I add getters and setters using defineProperty method](#can-i-add-getters-and-setters-using-defineproperty-method) |
 | 221 | [What is the purpose of switch-case](#what-is-the-purpose-of-switch-case) |
 | 222 | [What are the conventions to be followed for the usage of switch case](#what-are-the-conventions-to-be-followed-for-the-usage-of-switch-case) |
-| 223 | [What are primitive data types](#what-are-primitive-data-types) |
-| 224 | [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties) |
 | 225 | [What are the function parameter rules](#what-are-the-function-parameter-rules) |
 | 226 | [What is an error object](#what-is-an-error-object) |
 | 227 | [When you get a syntax error](#when-you-get-a-syntax-error) |
@@ -351,12 +312,9 @@
 | 301 | [How do you create an infinite loop](#how-do-you-create-an-infinite-loop) |
 | 302 | [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement) |
 | 303 | [What is the output of the following for loops](#what-is-the-output-of-the-following-for-loops) |
-| 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6) |
-| 305 | [What is ES6](#what-is-es6) |
 | 306 | [Can I redeclare let and const variables](#can-i-redeclare-let-and-const-variables) |
 | 307 | [Does the `const` variable make the value immutable](#does-the-const-variable-make-the-value-immutable) |
 | 308 | [What are default parameters](#what-are-default-parameters) |
-| 309 | [What are template literals](#what-are-template-literals) |
 | 310 | [How do you write multi-line strings in template literals](#how-do-you-write-multi-line-strings-in-template-literals) |
 | 311 | [What are nesting templates](#what-are-nesting-templates) |
 | 312 | [What are tagged templates](#what-are-tagged-templates) |
@@ -522,6 +480,155 @@
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
+
+
+309. ### What are template literals
+
+     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
+     In ES6, this feature enables using dynamic expressions as below,
+
+     ```javascript
+     var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
+     ```
+
+     In ES5, you need break string like below,
+
+     ```javascript
+     var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
+     ```
+
+     **Note:** You can use multi-line strings and string interpolation features with template literals.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+223. ### What are primitive data types
+
+     A primitive data type is data that has a primitive value (which has no properties or methods). There are 7 types of primitive data types.
+
+     1. string
+     2. number
+     3. boolean
+     4. null
+     5. undefined
+     6. bigint
+     7. symbol
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+224. ### What are the different ways to access object properties
+
+     There are 3 possible ways for accessing the property of an object.
+
+     1. **Dot notation:** It uses dot for accessing the properties
+
+     ```javascript
+     objectName.property;
+     ```
+
+     2. **Square brackets notation:** It uses square brackets for property access
+
+     ```javascript
+     objectName["property"];
+     ```
+
+     3. **Expression notation:** It uses expression in the square brackets
+
+     ```javascript
+     objectName[expression];
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+
+
+304. ### List down some of the features of ES6
+
+     Below are the list of some new features of ES6,
+
+     1. Support for constants or immutable variables
+     2. Block-scope support for variables, constants and functions
+     3. Arrow functions
+     4. Default parameters
+     5. Rest and Spread Parameters
+     6. Template Literals
+     7. Multi-line Strings
+     8. Destructuring Assignment
+     9. Enhanced Object Literals
+     10. Promises
+     11. Classes
+     12. Modules
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+305. ### What is ES6
+
+     ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+
+
+25. ### What is Hoisting
+
+    Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
+    Let's take a simple example of variable hoisting,
+
+    ```javascript
+    console.log(message); //output : undefined
+    var message = "The variable Has been hoisted";
+    ```
+
+    The above code looks like as below to the interpreter,
+
+    ```javascript
+    var message;
+    console.log(message);
+    message = "The variable Has been hoisted";
+    ```
+
+    In the same fashion, function declarations are hoisted too
+
+    ```javascript
+    message("Good morning"); //Good morning
+
+    function message(name) {
+      console.log(name);
+    }
+    ```
+
+    This hoisting makes functions to be safely used in code before they are declared.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+
+
+27. ### What are closures
+
+    A closure is the combination of a function bundled(enclosed) together with its lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
+
+    1. Own scope where variables defined between its curly brackets
+    2. Outer function's variables
+    3. Global variables
+
+    Let's take an example of closure concept,
+
+    ```javascript
+    function Welcome(name) {
+      var greetingInfo = function (message) {
+        console.log(message + " " + name);
+      };
+      return greetingInfo;
+    }
+    var myFunction = Welcome("John");
+    myFunction("Welcome "); //Output: Welcome John
+    myFunction("Hello Mr."); //output: Hello Mr. John
+    ```
+
+    As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+
 1. ### What are the possible ways to create objects in JavaScript
 
    There are many ways to create objects in javascript as mentioned below:
@@ -1130,38 +1237,6 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-25. ### What is Hoisting
-
-    Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
-    Let's take a simple example of variable hoisting,
-
-    ```javascript
-    console.log(message); //output : undefined
-    var message = "The variable Has been hoisted";
-    ```
-
-    The above code looks like as below to the interpreter,
-
-    ```javascript
-    var message;
-    console.log(message);
-    message = "The variable Has been hoisted";
-    ```
-
-    In the same fashion, function declarations are hoisted too
-
-    ```javascript
-    message("Good morning"); //Good morning
-
-    function message(name) {
-      console.log(name);
-    }
-    ```
-
-    This hoisting makes functions to be safely used in code before they are declared.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
 26. ### What are classes in ES6
 
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
@@ -1195,31 +1270,6 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-27. ### What are closures
-
-    A closure is the combination of a function bundled(enclosed) together with its lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
-
-    1. Own scope where variables defined between its curly brackets
-    2. Outer function's variables
-    3. Global variables
-
-    Let's take an example of closure concept,
-
-    ```javascript
-    function Welcome(name) {
-      var greetingInfo = function (message) {
-        console.log(message + " " + name);
-      };
-      return greetingInfo;
-    }
-    var myFunction = Welcome("John");
-    myFunction("Welcome "); //Output: Welcome John
-    myFunction("Hello Mr."); //output: Hello Mr. John
-    ```
-
-    As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
-
-    **[⬆ Back to Top](#table-of-contents)**
 
 28. ### What are modules
 
@@ -4302,44 +4352,6 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-223. ### What are primitive data types
-
-     A primitive data type is data that has a primitive value (which has no properties or methods). There are 7 types of primitive data types.
-
-     1. string
-     2. number
-     3. boolean
-     4. null
-     5. undefined
-     6. bigint
-     7. symbol
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-224. ### What are the different ways to access object properties
-
-     There are 3 possible ways for accessing the property of an object.
-
-     1. **Dot notation:** It uses dot for accessing the properties
-
-     ```javascript
-     objectName.property;
-     ```
-
-     2. **Square brackets notation:** It uses square brackets for property access
-
-     ```javascript
-     objectName["property"];
-     ```
-
-     3. **Expression notation:** It uses expression in the square brackets
-
-     ```javascript
-     objectName[expression];
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
 225. ### What are the function parameter rules
 
      JavaScript functions follow below rules for parameters,
@@ -5625,31 +5637,6 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-304. ### List down some of the features of ES6
-
-     Below are the list of some new features of ES6,
-
-     1. Support for constants or immutable variables
-     2. Block-scope support for variables, constants and functions
-     3. Arrow functions
-     4. Default parameters
-     5. Rest and Spread Parameters
-     6. Template Literals
-     7. Multi-line Strings
-     8. Destructuring Assignment
-     9. Enhanced Object Literals
-     10. Promises
-     11. Classes
-     12. Modules
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-305. ### What is ES6
-
-     ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
 306. ### Can I redeclare let and const variables
 
      No, you cannot redeclare let and const variables. If you do, it throws below error
@@ -5724,25 +5711,6 @@
 
      console.log(calculateArea()); //300
      ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-309. ### What are template literals
-
-     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
-     In ES6, this feature enables using dynamic expressions as below,
-
-     ```javascript
-     var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
-     ```
-
-     In ES5, you need break string like below,
-
-     ```javascript
-     var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
-     ```
-
-     **Note:** You can use multi-line strings and string interpolation features with template literals.
 
      **[⬆ Back to Top](#table-of-contents)**
 
